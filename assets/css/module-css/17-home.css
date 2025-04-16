@@ -1,0 +1,339 @@
+    /* Playpen Sans */
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Playpen+Sans:wght@100..800&display=swap');
+
+    :root {
+      --red: #f15a29;
+      --dogel-blue: #0098a1;
+      --wight: #fff;
+    }
+    
+    * {
+      font-family: "Playpen Sans", cursive;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      outline: none;
+      border: none;
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+    
+    html {
+      overflow-x: hidden;
+      font-size: 62.5%;
+    }
+    
+    .heading {
+      color: var(--red);
+      font-size: 3.5rem;
+      padding: 1rem;
+      padding-top: 6rem;
+      text-align: center;
+      letter-spacing: .2rem;
+    }
+    
+    .heading span {
+      color: var(--navy-blue);
+    }
+    
+    
+    /* ============================
+          Home form button
+    ================================ */
+    
+    .button{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    
+    .button .btn-1{
+      align-items: center;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-size: 14px;
+    }
+    
+    .button .btn-1 i{
+      margin-right: .5rem;
+      font-size: 2.5rem;
+    }
+    
+    /* ============================
+          Home form queries
+    ================================ */
+    
+    .home {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      position: relative;
+      padding: 2rem 10rem;
+    }
+    
+    .home .images img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    
+    .home .content {
+      align-self: center;
+      margin-top: 7rem;
+    }
+    
+    .home .content h1 {
+      font-size: 5rem;
+      color: var(--red);
+      /* text-shadow: 0 .3rem .5rem #000; */
+    }
+    
+    .home .content h1 span {
+      font-size: 4rem;
+      color: var(--red);
+      /* text-shadow: 0 .3rem 1rem #000; */
+    }
+    
+    .home .content p {
+      margin-right: 5rem;
+      font-size: 2rem;
+      letter-spacing: .5rem;
+      /* color: #e2e2e2; */
+      color: #222 !important;
+      text-shadow: 0 .2rem 1rem #000;
+    }
+    
+    /* ============================
+          Home form queries
+    ================================ */
+    
+    .home .form-container form {
+      width: 40rem;
+      background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(0, 0, 0, .3)), url(/assets/images/background/gallery-b.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding: 0 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    }
+    
+    .home .form-container form h3 {
+      text-align: center;
+      font-size: 2.5rem;
+      padding: 1rem 0;
+      color: var(--red);
+      text-transform: uppercase;
+    }
+    
+    .home .form-container form span {
+      font-size: 2rem;
+      display: block;
+      padding: 5px 0;
+      color: #f9f9f9;
+      text-align: left;
+    }
+    
+    .home .form-container form .select{
+      border-radius: .5rem;
+      height: 3.5rem;
+      width: 100%;
+      padding: 0 1rem;
+      font-size: 2rem;
+      background: #eee;
+      color: #222;
+    }
+    
+    .home .form-container form input, select, textarea{
+      border-radius: .5rem;
+      height: 3.5rem;
+      width: 100%;
+      padding: 0 1rem;
+      font-size: 1.8rem;
+      background: #eee;
+    }
+    
+    
+    
+    .home .form-container form input[type="submit"] {
+      color: #fff;
+      background: var(--red);
+      border-radius: .5rem;
+      cursor: pointer;
+      font-size: 2rem;
+      margin: 1rem 0;
+      width: 100%;
+      transition: .2s linear;
+    }
+    
+    .home .form-container form input[type="submit"]:hover {
+      color: var(--red);
+      background: var(--wight);
+    }
+    
+    
+    
+    /* ============================
+          home  media queries
+    ================================ */
+    
+    
+    /* media queries  */
+    
+    @media (max-width:991px) {
+    
+      html {
+        font-size: 50%;
+      }
+    
+      .home {
+        flex-flow: column;
+        padding: 1.5rem;
+      }
+    
+      .home .content {
+        text-align: center;
+      }
+    
+      .home .content h1 {
+        font-size: 5rem;
+      }
+    
+      .home .content span {
+        font-size: 4rem;
+      }
+    
+      .home .content p {
+        font-size: 1.8rem;
+        /* padding:0;  */
+        margin: auto;
+      }
+    
+      .home .form-container form {
+        margin: auto;
+        width: 100%;
+      }
+    
+      .home .form-container {
+        width: 75%;
+      }
+    
+      .home .form-container form {
+        width: 100%;
+        margin: 3rem 0;
+      }
+    
+      .home .form-container form input[type="submit"] {
+        width: 100%;
+      }
+    
+      .contact .row .contact-form-container form input {
+        margin: 1rem 0;
+        /* width: 100%; */
+      }
+    
+      .contact .row .contact-form-container form input[type="submit"] {
+        width: 100%;
+      }
+    
+    }
+    
+    
+    
+    @media (max-width:768px) {
+    
+      html {
+        font-size: 55%;
+      }
+    
+      .home .content h1 {
+        font-size: 4rem;
+      }
+    
+      .home .content span {
+        font-size: 2rem;
+      }
+    
+      .home .content p {
+        font-size: 1.8rem;
+       
+      }
+    
+    
+      .home .form-container {
+        width: 75%;
+      }
+    
+      .home .form-container form {
+        width: 100%;
+        margin: 3rem 0;
+      }
+    
+      .home .form-container form input[type="submit"] {
+        width: 100%;
+      }
+    
+      .contact .row .contact-form-container form input {
+        margin: 1rem 0;
+        /* width: 100%; */
+      }
+    
+      .contact .row .contact-form-container form input[type="submit"] {
+        width: 100%;
+      }
+    
+    
+    
+    
+    
+      .contact .row {
+        flex-flow: column;
+      }
+    
+      .contact .row .contact-form-container {
+        width: 90%;
+        margin: 0 auto;
+      }
+    
+      .contact .row .map iframe {
+        width: 100vw;
+        height: 70vh;
+        padding: 1rem;
+      }
+    
+    
+    }
+    
+    @media (max-width:500px) {
+    
+      .home .form-container {
+        width: 100%;
+      }
+    
+      .home .form-container form {
+        width: 100%;
+        margin: 3rem 0;
+      }
+    
+      .home .form-container form input[type="submit"] {
+        width: 100%;
+      }
+    
+      .contact .row .contact-form-container form input {
+        margin: 1rem 0;
+        width: 100%;
+      }
+    
+      .contact .row .contact-form-container form input[type="submit"] {
+        width: 100%;
+      }
+    
+      .button .btn-1{
+        font-size: 1.2rem;
+      }
+    
+    }
