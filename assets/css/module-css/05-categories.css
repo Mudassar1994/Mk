@@ -220,7 +220,7 @@ categories three
     display: flex;
     align-items: center;
     gap: 16px;
-    background-color: var(--white-color);
+    background-color: #E0EDF8;
     padding: 38px 22px;
     border-radius: 8px;
 }
@@ -359,7 +359,7 @@ Responsive
     /* categories-four */
     .categories-four .categories-single {
         flex-direction: column;
-        align-items: flex-start;
+        /* align-items: flex-start; */
         padding: 20px 15px;
     }
 }
