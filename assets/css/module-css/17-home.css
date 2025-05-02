@@ -132,7 +132,7 @@
       text-transform: uppercase;
     }
     
-    .home .form-container form span {
+    .home .form-container form h3 {
       font-size: 2rem;
       display: block;
       padding: 5px 0;

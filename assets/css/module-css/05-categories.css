@@ -313,7 +313,7 @@ Responsive
     /* categories-four */
     .categories-four .categories-single {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         padding: 20px 15px;
     }
     

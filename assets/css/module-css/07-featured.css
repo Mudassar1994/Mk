@@ -19,9 +19,11 @@
     border-radius: 24px 24px 0 0;
     transition: 0.5s;
 }
+
 .featured-single:hover .featured-single-image img{
     transform: scale(1.1);
 }
+
 .featured-single-wishlist{
     width: 100%;
     padding: 20px 20px;
@@ -32,7 +34,8 @@
     top: 0;
     left: 0;
 }
-.featured-single-wishlist h6{
+
+.featured-single-wishlist p{
     color: var(--primary-color);
     background-color: var(--white-color);
     padding: 8px 20px;
@@ -41,6 +44,7 @@
     font-weight: 600;
     line-height: 20px;
 }
+
 .featured-single-wishlist a{
     width: 28px;
     height: 28px;
